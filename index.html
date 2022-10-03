@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/estilo.css">
+
+      <title>Financiamento</title>
+</head>
+<body>
+      <h2>Simulador de financiamento</h2>
+      <input id="textoValor" class="caixa" type="text" placeholder=" Valor do bem"><br>
+      <input id="textoEntrada" class="caixa" type="text" placeholder=" Valor de Entrada"><br>
+      <input id="textoTaxaJuros" class="caixa" type="text" placeholder=" Taxa de Juros (%) "><br>
+      <input id="textoPrazo" class="caixa" type="text" placeholder=" Prazo em Mês"><br>
+      <p class="carencia"><input type="checkbox"  id="comCarencia"> Com Carência?</p>
+      <select id="listaSuspensa" hidden>  
+            <option selected> Escolha uma das opções </option>
+            <option value="2"> 2 meses</option>
+            <option value="3"> 3 meses</option>
+            <option value="4"> 4 meses</option>
+      </select>
+      <button id="botaoCalcular" class=" btn btn-danger">Calcular</button>
+
+      <p></p>
+      <table>
+            <thead>
+                  <tr>
+                        <th>N° Parcela</th>
+                        <th>Valor da Parcela</th>
+                        <th>Amortização Parcela</th>
+                        <th>Juros Parcela</th>
+                        <th>Saldo Devedor</th>
+
+                  </tr>
+            </thead>
+            <tbody id="corpoTabela">
+                  
+            </tbody>
+      </table>
+      
+     
+      
+
+
+
+      <script type= "module" src="js/index.js"></script>
+      
+</body>
+</html>
